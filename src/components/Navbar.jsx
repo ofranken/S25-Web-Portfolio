@@ -11,7 +11,8 @@ function Navbar() {
     }
 
     return (
-        <header>
+        <>
+        <header className="gradient-background">
             <img src={logo} height="150px"></img>
             <nav ref={navRef}>
                 <a href="/#">About</a>
@@ -28,6 +29,8 @@ function Navbar() {
                 <FaBars />
             </button>
         </header>
+        </>
+        
     );
 }
 

@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
 
 .crimson-text-regular {
     font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .montecarlo-regular {
+    font-family: "MonteCarlo", serif;
     font-weight: 400;
     font-style: normal;
   }
@@ -11,23 +19,28 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Crimson Text", serif;
+    font-size: 20px;
   }
 
   :root {
-    --mainColor: #100c06;
-    --mainColorLight: #2a1a1b;
-    --secondaryColor: #5d4755;
+    --mainColor: #242325;
+    --mainColorLight: #816198;
+    --secondaryColor: #B093C6;
     --textColor: #eee;
   }
+  /* 
+    * HEADER/NAVBAR STYLES
+    */
 
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
+    width: 100%;
     padding: 0 2rem;
-    background-color: var(--mainColor);
-    color: var(--textColor);
+    position: fixed;
+    z-index: 1;
   }
 
   nav a {
@@ -35,14 +48,16 @@
     color: var(--textColor);
     text-decoration: none;
     padding: 5px 10px;
+    text-decoration: underline;
   }
 
   nav a:hover {
     transition: background-color 1s;
     border-radius: 5%;
-    color: plum;
+    color: var(--secondaryColor);
     background-color: var(--mainColorLight);
     border-color: var(--mainColorLight);
+    text-decoration: none;
   }
 
   header .nav-btn {
@@ -93,3 +108,98 @@
         font-size: 1.5rem;
     }
   }
+
+  /*
+  * NAVBAR GRADIENT ANIMATION
+  */
+
+  .gradient-background {
+    background: linear-gradient(300deg, var(--mainColor), #3a2c49, #413949);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+   /* 
+    * SPLASH PAGE STYLES
+    */
+  .dark-parchment {
+    width: 100vw;
+    height: 100vh;
+    position: relative;   
+    
+  }
+
+  .splash-outer-container {
+  }
+
+  .splash-inner-container {
+    background-image: url("../images/Dark Parchment Background.png");
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #flower-lineart {
+    max-height: 80vh;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    }
+
+  #olivia-img-1 {
+    max-height: 45vh;
+    max-width: 100%;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 1vw;
+    height: auto;
+    width: auto;
+  }
+
+  .splash-title {
+    font-family: "MonteCarlo", serif;
+    font-weight: 100;
+    font-size: 3vw;
+    color: white;
+  }
+
+  #splash-h1 {
+    font-size: 6vw;
+  }
+
+.flexbox-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexbox-item {
+  width: 200px;
+  margin: 10px;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+}
+
+.flexbox-item-1 {
+  min-height: 100px;
+}
+
+.flexbox-item-2 {
+  min-height: 200px;
+}
+
+.flexbox-item-3 {
+  min-height: 300px;
+}
