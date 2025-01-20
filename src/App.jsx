@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from "./components/Navbar";
 import SplashPage from "./components/SplashPage";
+import AboutSection from "./components/AboutSection";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Navbar/>
       <SplashPage/>
+      <AboutSection/>
     </>
   )
 }

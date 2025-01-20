@@ -1,23 +1,36 @@
 import {FaBars, FaTimes} from "react-icons/fa";
-import {useRef} from "react";
+import {useRef, useState} from "react";
 import "../styles/main.css";
 import logo from "../images/Portfolio Initials Logo - White.png";
+import {useScroll, useMotionValueEvent} from "framer-motion";
 
 function Navbar() {
     const navRef = useRef();
+    const {scrollY} = useScroll();
+    const [scrolled, setScrolled] = useState(false);
 
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        console.log("Page scroll ", latest);
+        if(latest > 840 && !scrolled) {
+            setScrolled(true);
+        } else if(latest < 840)
+        {
+            setScrolled(false);
+        }
+    });
+    
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
     }
 
     return (
         <>
-        <header className="gradient-background">
+        <header className={scrolled ? "dark-gradient-background" : "gradient-background"}>
             <img src={logo} height="150px"></img>
             <nav ref={navRef}>
                 <a href="/#">About</a>
                 <a href="/#">Skills</a>
-                <a href="/#">Project</a>
+                <a href="/#">Projects</a>
                 <a href="/#">Contact</a>
                 <a href="/#">Resumé</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>

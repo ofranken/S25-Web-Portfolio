@@ -1,4 +1,4 @@
-import parchmentBackground from "../images/Dark Parchment Background.png";
+import parchmentBackground from "../images/Dark Textured Parchment Background.png";
 import flowerLineart from "../images/Portfolio Flower Lineart.png";
 import olivia1 from "../images/Olivia-1-Square.png"
 
