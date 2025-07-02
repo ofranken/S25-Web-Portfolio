@@ -20,7 +20,7 @@ function SkillsSection() {
         <div className="skill-icon-div"><i className="devicon-react-original"></i> <p>React.js</p></div>
         <div className="skill-icon-div"><i className="devicon-blender-original"></i> <p>Blender</p></div>
         <div className="skill-icon-div"><i className="devicon-unity-plain"></i> <p>Unity Game Engine</p></div>
-        <div className="skill-icon-div"><VRIcon className="i-vr" height="95px" width="95px"/> <p>Virtual Reality</p></div>
+        <div className="skill-icon-div"><i><VRIcon className="i-vr" height="105px" width="105px"/> </i><p className="p-vr">Virtual Reality</p></div>
 
 
     </div>

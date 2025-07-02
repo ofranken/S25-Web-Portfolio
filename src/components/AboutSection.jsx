@@ -16,9 +16,17 @@ function AboutSection() {
                 <img id="olivia-img-2" src={olivia2}></img>
 
                 <div id="about-icon-container">
+                    <a href="https://www.instagram.com/okaye______?igsh=dzYwY2oxbGwwM2Z5&utm_source=qr" target="_blank">
                     <button className="social-media-btn"><Instagram className="about-icons"/></button>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/olivia-franken/" target="_blank">
                     <button className="social-media-btn"><LinkedIn className="about-icons"/></button>
+                    </a>
+                    
+                    <a href="https://github.com/ofranken" target="_blank">
                     <button className="social-media-btn"><Github className="about-icons"/></button>
+                    </a>
                 </div>
                 
             </div>

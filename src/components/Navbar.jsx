@@ -28,8 +28,8 @@ function Navbar() {
         <header className={scrolled ? "dark-gradient-background" : "gradient-background"}>
             <img src={logo} height="150px"></img>
             <nav ref={navRef}>
-                <a onClick={() => {window.scrollTo({top: 1000, behavior: "smooth"})}}>About</a>
-                <a href="/#">Skills</a>
+                <a onClick={() => {window.scrollTo({top: 1300, behavior: "smooth"})}}>About</a>
+                <a onClick={() => {window.scrollTo({top: 2400, behavior: "smooth"})}}>Skills</a>
                 <a href="/#">Projects</a>
                 <a href="/#">Contact</a>
                 <a href="/#">Resumé</a>
