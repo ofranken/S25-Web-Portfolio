@@ -3,14 +3,17 @@ import React from "react";
 import Github from '../images/icons/github.svg?react';
 import Instagram from "../images/icons/instagram.svg?react";
 import LinkedIn from  "../images/icons/linkedin.svg?react";
+import AboutFlower from "../images/backgrounds/revised-about-flower.png";
 
 
 function AboutSection() {
 
     return <section className="about-section">
 
+
         <div className="about-outer-container">
             <h2 id="about-small-screen" className="section-title">About...</h2>
+                    <img src={AboutFlower} className="about-flower"/>
 
             <div className="about-inner-container-imgs">
                 <img id="olivia-img-2" src={olivia2}></img>

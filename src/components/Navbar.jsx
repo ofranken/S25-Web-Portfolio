@@ -29,9 +29,10 @@ function Navbar() {
             <img src={logo} height="150px"></img>
             <nav ref={navRef}>
                 <a onClick={() => {window.scrollTo({top: 1300, behavior: "smooth"})}}>About</a>
-                <a onClick={() => {window.scrollTo({top: 2400, behavior: "smooth"})}}>Skills</a>
-                <a href="/#">Projects</a>
-                <a href="/#">Contact</a>
+                <a onClick={() => {window.scrollTo({top: 2500, behavior: "smooth"})}}>Skills</a>
+                <a onClick={() => {window.scrollTo({top: 3750, behavior: "smooth"})}}>Projects</a>
+                <a onClick={() => {window.scrollTo({top: 5400, behavior: "smooth"})}}>Developments</a>
+                <a onClick={() => {window.scrollTo({top: 8300, behavior: "smooth"})}}>Contact</a>
                 <a href="/#">Resumé</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />

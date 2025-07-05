@@ -1,42 +1,55 @@
 import React from 'react';
+import witchCover from "../images/Cover Reading Of A Witch.png";
+import ringsCover from "../images/Cover Rings of Power.png"
+import starshipCover from "../images/Cover Starship Battle.png";
+import machiningCover from "../images/Cover Machining MR.png"
+import cleanroomCover from "../images/Cover XR Cleanroom.png"
+import cafePOSCover from "../images/Cover Cafe POS.png"
+import portfolioCover from "../images/Cover Portfolio Website.png"
 
 function ProjectCards() {
   const projects = [
     {
       id: 1,
-      name: "XR Semiconductor Fabrication Simulator",
+      name: "XR Cleanroom Semiconductor Fabrication Simulator",
       description: "Virtual reality application for the Meta Quest headsets designed in collaboration with electrical computer engineering faculty to aid in semiconductor education.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop"
+      image: cleanroomCover
     },
     {
       id: 2,
       name: "MR Machine Control for Modern Manufacturing",
       description: "Mixed reality-based controller for realtime 3D printer and CNC management built for the Microsoft HoloLens 2.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=300&fit=crop"
+      image: machiningCover
     },
-    {
+     {
       id: 3,
-      name: "3D Art: Reading of a Witch",
-      description: "Final project render for Modeling & Animation I, taking inspiration from popular fantasy titles and witchy themes.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop"
+      name: "Café Point of Sale",
+      description: "Local desktop cash-based POS system built on the C#/.NET framework in Visual Studio.",
+      image: cafePOSCover
     },
-    {
+     {
       id: 4,
       name: "3D Art: LOTR Rings of Power Reconstruction",
       description: "Final project render for Modeling & Animation II, taking inspiration from Rings of Power.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop"
+      image: ringsCover
     },
     {
       id: 5,
-      name: "Café Point of Sale",
-      description: "Local desktop cash-based POS system built on the C#/.NET framework in Visual Studio Code.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+      name: "3D Art: Mini Starship Battle",
+      description: "Modeling & Animation II animation project with a kitbashing investigation.",
+      image: starshipCover
+    },
+     {
+      id: 6,
+      name: "3D Art: Reading of a Witch",
+      description: "Final project render for Modeling & Animation I, taking inspiration from popular fantasy titles and witchy themes.",
+      image: witchCover
     },
     {
-      id: 6,
+      id: 7,
       name: "Portfolio Website",
       description: "Modern, responsive portfolio website with smooth animations built with React and CSS3.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop"
+      image: portfolioCover
     }
   ];
 
@@ -66,3 +79,5 @@ function ProjectCards() {
 }
 
 export default ProjectCards;
+
+ 

@@ -5,6 +5,9 @@ import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 import ProjectSection from "./components/ProjectSection";
 import ProjectCards from "./components/ProjectCards";
+import ProfessionalSection from "./components/ProfessionalSection";
+import ContactMeSection from "./components/ContactMeSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,8 +16,10 @@ function App() {
       <SplashPage/>
       <AboutSection/>
       <SkillsSection/>
-      <ProjectSection>
-      </ProjectSection>
+      <ProjectSection/>
+      <ProfessionalSection/>
+      <ContactMeSection/>
+      <Footer/>
     </>
   )
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import VRIcon from '../images/icons/skill icons/virtual-reality.svg?react';
-
+import Orbs from "../images/backgrounds/skills-orbs.png";
 
 function SkillsSection() {
 
     return <section className="skills-section">
+    <img src={Orbs} className="orbs"/>
     <h2 className="section-title skills-title">Skills...</h2>
     <p id="skill-instruction">Click on any skill icon to see the most representative project.</p>
 
