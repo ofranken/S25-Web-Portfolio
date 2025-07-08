@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ofranken.github.io/s25-web-portfolio",
+  "homepage": "https://ofranken.github.io/S25-Web-Portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
