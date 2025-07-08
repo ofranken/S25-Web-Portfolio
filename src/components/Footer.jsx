@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Github from '../images/icons/github.svg?react';
 import Instagram from "../images/icons/instagram.svg?react";
 import LinkedIn from  "../images/icons/linkedin.svg?react";
@@ -32,12 +33,32 @@ const Footer = () => {
         {/* Right side - Navigation Links */}
         <div className="footer-right">
           <nav className="footer-nav">
-            <a href="#about" className="footer-link">About</a>
-            <a href="#developments" className="footer-link">Developments</a>
-            <a href="#skills" className="footer-link">Skills</a>
-            <a href="#contact" className="footer-link">Contact</a>
-            <a href="#projects" className="footer-link">Projects</a>
-            <a href="/resume.pdf" className="footer-link" target="_blank" rel="noopener noreferrer">Resume</a>
+                <Link to="/#about" className="footer-link" onClick={() => {
+                    if(location.pathname === "/") {
+                        window.scrollTo({top: 1300, behavior: "smooth"});
+                    }
+                }}>About</Link>            
+                <Link to="/#skills" className="footer-link" onClick={() => {
+                    if(location.pathname === "/") {
+                        window.scrollTo({top: 2500, behavior: "smooth"});
+                    }
+                }}>Skills</Link>
+                <Link to="/#projects" className="footer-link" onClick={() => {
+                    if(location.pathname === "/") {
+                        window.scrollTo({top: 3750, behavior: "smooth"});
+                    }
+                }}>Projects</Link>
+                <Link to="/#developments" className="footer-link" onClick={() => {
+                    if(location.pathname === "/") {
+                        window.scrollTo({top: 5400, behavior: "smooth"});
+                    }
+                }}>Developments</Link>
+                <Link to="/#contact" className="footer-link" onClick={() => {
+                    if(location.pathname === "/") {
+                        window.scrollTo({top: 8300, behavior: "smooth"});
+                    }
+                }}>Contact</Link>
+            <a href="/resume.pdf" className="footer-link" target="_blank" rel="noopener noreferrer">Resumé</a>
           </nav>
         </div>
       </div>

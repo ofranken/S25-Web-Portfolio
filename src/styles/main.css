@@ -44,7 +44,8 @@
     z-index: 10;
   }
 
-  nav a {
+  /* Add this to your existing CSS - it extends your current nav a styles to also apply to Link */
+  nav a, nav Link {
     margin: 0 2rem;
     color: var(--textColor);
     text-decoration: none;
@@ -52,7 +53,7 @@
     text-decoration: underline;
   }
 
-  nav a:hover {
+  nav a:hover, nav Link:hover {
     transition: background-color 1s;
     border-radius: 5%;
     color: var(--secondaryColor);
@@ -60,6 +61,13 @@
     border-color: var(--mainColorLight);
     text-decoration: none;
     cursor: pointer;
+  }
+
+  /* For mobile responsive */
+  @media only screen and (max-width: 1400px) {
+    nav a, nav Link {
+      font-size: 1.5rem;
+    }
   }
 
   header .nav-btn {
@@ -435,6 +443,11 @@
         margin-bottom: -200px;
         margin-left: -20px;
       }
+   }
+
+   .skill-link {
+    color: white;
+    text-decoration: none;
    }
 
 
