@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import Github from '../images/icons/github.svg?react';
 import Instagram from "../images/icons/instagram.svg?react";
 import LinkedIn from  "../images/icons/linkedin.svg?react";
+import Resume from  "../images/profdevmedia/Franken Resume.pdf";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -58,7 +59,7 @@ const Footer = () => {
                         window.scrollTo({top: 8300, behavior: "smooth"});
                     }
                 }}>Contact</Link>
-            <a href="/resume.pdf" className="footer-link" target="_blank" rel="noopener noreferrer">Resumé</a>
+            <a href={Resume} className="footer-link" target="_blank" rel="noopener noreferrer">Resumé</a>
           </nav>
         </div>
       </div>

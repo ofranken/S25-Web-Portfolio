@@ -4,6 +4,8 @@ import {Link} from "react-router-dom";
 import "../styles/main.css";
 import logo from "../images/Portfolio Initials Logo - White.png";
 import {useScroll, useMotionValueEvent} from "framer-motion";
+import Resume from  "../images/profdevmedia/Franken Resume.pdf";
+
 
 function Navbar() {
     const navRef = useRef();
@@ -54,7 +56,7 @@ function Navbar() {
                         window.scrollTo({top: 8300, behavior: "smooth"});
                     }
                 }}>Contact</Link>
-                <a href="/#">Resumé</a>
+                <a href={Resume} target="_blank" rel="noopener noreferrer">Resumé</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />
                 </button>

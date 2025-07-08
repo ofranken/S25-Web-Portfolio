@@ -22,12 +22,35 @@ function ContactMeSection() {
         }));
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission here
-        console.log('Form submitted:', formData);
-        // You can add your form submission logic here
-    };
+    const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    try {
+        const response = await fetch('https://formspree.io/f/xvgrjbgk', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        });
+        
+        if (response.ok) {
+            alert('Message sent successfully!');
+            setFormData({
+                firstName: '',
+                lastName: '',
+                email: '',
+                phone: '',
+                message: ''
+            });
+        } else {
+            alert('Failed to send message. Please try again.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Failed to send message. Please try again.');
+    }
+};
 
     const copyToClipboard = async (text, type) => {
         try {

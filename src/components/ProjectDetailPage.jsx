@@ -31,7 +31,7 @@ function ProjectDetailPage() {
       description: 'Virtual reality application for the Meta Quest headsets designed in collaboration with electrical computer engineering faculty to aid in semiconductor education.',
       date: 'Last Updated: July 2025',
       status: 'Ongoing',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+      videoUrl: 'https://www.youtube.com/embed/AS8h9n8L7sw',
       imageUrl: null,
       caption: 'See full demo of the photolithography module.',
       content: {
