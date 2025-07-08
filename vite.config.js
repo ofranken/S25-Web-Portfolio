@@ -4,5 +4,8 @@ import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
   plugins: [react()],
-  base: '/s25-web-portfolio/'
+  base: '/S25-Web-Portfolio/',
+  build: {
+    outDir: 'dist'
+  }
 })
