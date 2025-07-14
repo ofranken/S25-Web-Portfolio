@@ -22,7 +22,7 @@ function SkillsSection() {
         <div className="skill-icon-div"><Link className="skill-link" to={`/project/portfolio-website`} onClick={()=> window.scrollTo(0,0)}><i className="devicon-react-original"></i></Link> <p>React.js</p></div>
         <div className="skill-icon-div"><Link className="skill-link" to={`/project/lotr-rings`} onClick={()=> window.scrollTo(0,0)}><i className="devicon-blender-original"></i></Link> <p>Blender</p></div>
         <div className="skill-icon-div"><Link className="skill-link" to={`/project/xr-cleanroom`} onClick={()=> window.scrollTo(0,0)}><i className="devicon-unity-plain"></i></Link> <p>Unity Game Engine</p></div>
-        <div className="skill-icon-div"><Link className="skill-link" to={`/project/xr-cleanroom`} onClick={()=> window.scrollTo(0,0)}><i><VRIcon className="i-vr" height="105px" width="105px"/></i></Link> <p className="p-vr">Virtual Reality</p></div>
+        <div className="skill-icon-div"><Link className="skill-link" to={`/project/xr-cleanroom`} onClick={()=> window.scrollTo(0,0)}><VRIcon className="i-vr" height="105px" width="105px"/></Link> <p className="p-vr">Virtual Reality</p></div>
 
 
     </div>

@@ -56,7 +56,7 @@ function HomePage() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <div className="min-h-screen bg-purple-900">
         <Navbar />
         <Routes>

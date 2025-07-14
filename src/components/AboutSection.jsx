@@ -1,5 +1,5 @@
+import React from 'react';
 import olivia2 from "../images/Olivia-2-Square.png";
-import React from "react";
 import Github from '../images/icons/github.svg?react';
 import Instagram from "../images/icons/instagram.svg?react";
 import LinkedIn from  "../images/icons/linkedin.svg?react";

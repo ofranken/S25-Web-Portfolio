@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react-swc'
 import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/S25-Web-Portfolio/',
+  plugins: [react(), svgr()],
+  base: '/Portfolio/',
   build: {
     outDir: 'dist'
   }

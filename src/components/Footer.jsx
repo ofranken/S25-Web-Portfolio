@@ -1,4 +1,3 @@
-import React from 'react';
 import {Link} from 'react-router-dom';
 import Github from '../images/icons/github.svg?react';
 import Instagram from "../images/icons/instagram.svg?react";
@@ -68,6 +67,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-
